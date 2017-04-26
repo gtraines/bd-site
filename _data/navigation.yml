@@ -1,0 +1,45 @@
+navbar:
+- text: Features
+  permalink: /features/
+  multiple_permalinks:
+    - /features/:path/
+- text: Services
+  permalink: /services/
+- text: Contact
+  permalink: /contact/
+- text: About
+  permalink: /about/
+- text: Sign up
+  permalink: /sign-up/
+- text: Login
+  permalink: /login/
+
+drawer:
+- text: Features
+  permalink: /features/
+- text: Services
+  permalink: /services/
+- text: Contact
+  permalink: /contact/
+- text: About
+  permalink: /about/
+- text: Sign up
+  permalink: /sign-up/
+- text: Login
+  permalink: /login/
+
+footer:
+- text: Features
+  permalink: /features/
+  multiple_permalinks:
+    - /features/:path/
+- text: Services
+  permalink: /services/
+- text: Contact
+  permalink: /contact/
+- text: About
+  permalink: /about/
+- text: Sign up
+  permalink: /sign-up/
+- text: Login
+  permalink: /login/

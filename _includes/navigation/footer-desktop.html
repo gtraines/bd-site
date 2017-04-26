@@ -1,0 +1,37 @@
+<nav class="footer-desktop">
+  <div class="footer-logo-links">
+    <a class="footer-logo media_link" href="{{ site.url }}">
+      <img src="{{ site.baseurl }}/assets/img/logos/tailicon.png" alt="Basket Devil">
+    </a>
+  </div>
+  <div class="footer-links-wrapper">
+  <div class="footer-links">
+    <ul>
+    {% for item in include.nav_items %}
+      <li>
+        {% if item.permalink %}
+          {% assign item_link = item.permalink | prepend: site.baseurl %}
+        {% else %}
+          {% assign item_link = item.text | slugify | hash_link | prepend: site.baseurl %}
+        {% endif %}
+        <a href="{{ item_link }}">{{ item.text }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+  <div class="footer-links">
+    <h2 class="footer-links-heading">Contact us</h2>
+    <ul>
+      <li>
+        <a href="{{ site.baseurl }}/about/#for-press">Press</a>
+      </li>
+      <li>
+        <a href="https://twitter.com/18F">@18F</a>
+      </li>
+      <li>
+        <a href="mailto:18F@gsa.gov">18F@gsa.gov</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>

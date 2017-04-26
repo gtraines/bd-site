@@ -1,0 +1,17 @@
+<a class="skipnav" href="#main-content">Skip to main content</a>
+<header role="banner">
+  <div class="site-navbar usa-grid">
+    <button class="menu-btn">Menu</button>
+    <a class="site-logo media_link" href="{{ site.baseurl }}/">
+      <img src="{{ site.baseurl }}/assets/img/logos/tailicon.png" alt="Basket Devil logo"
+      {% if page.url == '/' %}
+        aria-hidden="true"
+      {% endif %}
+      ></a><img src="{{ site.baseurl }}/assets/img/logos/bd-title.svg" alt="Basket Devil title">
+    <nav role="navigation">
+      {% include navigation.html navbar=true %}
+    </nav>
+  </div>
+</header>
+<div class="overlay"></div>
+
