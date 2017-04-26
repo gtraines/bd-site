@@ -1,7 +1,7 @@
 {
-  "name": "18f.gsa.gov",
+  "name": "bd-site",
   "version": "1.0.0",
-  "description": "18F's flagship website",
+  "description": "bd-site",
   "main": "config.yml",
   "directories": {
     "test": "tests"
@@ -21,19 +21,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/18F/18f.gsa.gov.git"
+    "url": "git+https://github.com/gtraines/bd-site.git"
   },
   "keywords": [
-    "18f",
+    "basket-devil",
     "site",
     "blog"
   ],
   "author": "18F",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/18F/18f.gsa.gov/issues"
+    "url": "https://github.com/gtraines/bd-site/issues"
   },
-  "homepage": "https://18f.gsa.gov",
+  "homepage": "https://www.basketdevil.com",
   "devDependencies": {
     "pa11y-ci": "^0.3.0"
   },
