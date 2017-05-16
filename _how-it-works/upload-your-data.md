@@ -1,21 +1,22 @@
 ---
-layout: tag-results
+layout: default-intro
 agency: 
-title: Step 2 - Upload your data
+title: 2. Upload your data
 subtitle: Submit checkout data via upload or integration
-permalink: /how-it-works/upload-your-data/
+permalink: /how-it-works/upload-your-data
 excerpt: We developed an approval tool that makes it easier for P-Card holders to manage purchases and approvals.
 image:
 image_accessibility:
 image_icon: gavel.svg
-tag: c2
+tag: 
 expiration_date:
-github_repo: https://github.com/18F/C2
-project_url: "[C2 website](https://cap.18f.gov/)"
+github_repo: 
+project_url: 
 learn_more:
 product_clients:
 resources:
 quotes:
+project_weight: 2
 ---
 
 Federal employees who want to make small, work-related purchases do so using a Purchase Card (or P-Card, for short). The P-Cards system was put in place to ensure proper use of taxpayers’ money, and they can only be used by specially trained employees. Until recently, all P-Card users had to manually track their purchases, which took time and effort needed for more mission-critical tasks.
@@ -32,5 +33,3 @@ Drawing on this research, 18F built the first version of C2 in just a few weeks 
 - A dashboard view that allows users to see all requested purchases
 - Automated emails that keep requesters and approvers informed
 - A history of past purchases, which is useful to reference when making similar future purchases
-
-The response to C2 has been extremely positive. One user said, “C2 has been an incredibly useful tool...in that it combines the best of an email system and a spreadsheet system without the downsides of either."

@@ -1,5 +1,5 @@
 ---
-title: About Basket Devil
+title: Basket Devil
 path: about
 permalink: /about/
 layout: default-intro

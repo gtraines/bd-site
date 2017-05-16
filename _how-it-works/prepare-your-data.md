@@ -1,25 +1,21 @@
 ---
-layout: tag-results
-agency:
-title: Step 1 - Prepare your data
+layout: default-intro
+title: 1. Prepare your data
 subtitle: Format and anonymize your checkout data
 permalink: /how-it-works/prepare-your-data
 excerpt: 
 image:
 image_accessibility: 
 image_icon: folder.svg
-tag: 
-expiration_date:
 github_repo:
 project_url: 
 learn_more:
 product_clients:
 resources:
-quote:
+project_weight: 3
+quote: I used to dream of blue skies
 ---
 
-
-<div class="small-caps">Approach</div>
 ### Test heading
 
 
