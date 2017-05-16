@@ -1,12 +1,10 @@
 ---
-title: Basket Devil Features
-permalink: /features/
+title: Basket Devil
+permalink: /how-it-works/
 layout: default-intro
-lead: We help federal agencies build, buy, and share modern digital services to improve the user experience of government.
+lead: How it works
 content_wide: true
 content_focus: false
-redirect_from:
-  - /consulting/
 banner_cta: true
 gridless: true
 ---
@@ -14,12 +12,11 @@ gridless: true
 <div class="usa-grid">
   <section class="usa-section">
     <div class="usa-section-bottom">
-      <div class="small-caps small-caps-no-margin">Features</div>
       <h3>We’ve worked with more than 50 offices and agencies on more than 200 engagements.</h3>
       <p>All our projects support agencies in transforming how they deliver digital services and technology products. Here are a few of the projects we’ve worked on.</p>
     </div>
     <div class="usa-flex usa-flex-wrap">
-      {% assign features_list = site | find_collection: 'features' | weighted_sort: 'project_weight', 'title' %}
+      {% assign features_list = site | find_collection: 'how-it-works' | weighted_sort: 'project_weight', 'title' %}
       {% for feature in features_list %}
         {% include card.html
          image_src=feature.image

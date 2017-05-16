@@ -1,10 +1,10 @@
 navbar:
-- text: Features
-  permalink: /features/
+- text: Home
+  permalink: /
+- text: How it works
+  permalink: /how-it-works/
   multiple_permalinks:
-    - /features/:path/
-- text: Services
-  permalink: /services/
+    - /how-it-works/:path/
 - text: Contact
   permalink: /contact/
 - text: About
@@ -15,10 +15,10 @@ navbar:
   permalink: /login/
 
 drawer:
-- text: Features
-  permalink: /features/
-- text: Services
-  permalink: /services/
+- text: Home
+  permalink: /
+- text: How it works
+  permalink: /how-it-works/
 - text: Contact
   permalink: /contact/
 - text: About
@@ -29,12 +29,12 @@ drawer:
   permalink: /login/
 
 footer:
-- text: Features
-  permalink: /features/
+- text: Home
+  permalink: /
+- text: How it works
+  permalink: /how-it-works/
   multiple_permalinks:
-    - /features/:path/
-- text: Services
-  permalink: /services/
+    - /how-it-works/:path/
 - text: Contact
   permalink: /contact/
 - text: About

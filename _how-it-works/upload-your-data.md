@@ -1,9 +1,9 @@
 ---
-layout: project-tag-results
-agency: General Services Administration
-title: C2 purchase approval tool
-subtitle: Simplifying purchasing for federal employees
-permalink: /what-we-deliver/c2/
+layout: tag-results
+agency: 
+title: Step 2 - Upload your data
+subtitle: Submit checkout data via upload or integration
+permalink: /how-it-works/upload-your-data/
 excerpt: We developed an approval tool that makes it easier for P-Card holders to manage purchases and approvals.
 image:
 image_accessibility:

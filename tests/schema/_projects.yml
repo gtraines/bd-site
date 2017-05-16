@@ -6,7 +6,7 @@ excerpt: String
 tag: String
 permalink: String
 config:
-  path: _features
+  path: _how-it-works
   ignore:
   - README.md
   - ..

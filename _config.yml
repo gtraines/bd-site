@@ -8,7 +8,7 @@ url: "https://www.basketdevil.com" # the base hostname & protocol for your sites
 localhost: "localhost:4000"
 env: "production"
 logo: /assets/img/logos/tailicon.png
-github_repo: https://github.com/18F/18f.gsa.gov/blob/master
+github_repo: https://github.com/gtraines/bd-site
 
 
 analytics:
@@ -19,9 +19,9 @@ collections:
   about:
     output: true
     permalink: /:path/
-  features:
+  how-it-works:
     output: true
-    permalink: /features/:path/
+    permalink: /how-it-works/:path/
   contact:
     output: false
     permalink: /contact/:path/
