@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby
+#!/home/pi/.rubies/ruby-2.3.1/bin/ruby
 require 'html-proofer'
 proofer = HTMLProofer.check_directory('./_site', directory_index_file: 'index.html',
                                                  url_ignore: ['/dashboard', '18f@gsa.gov'],

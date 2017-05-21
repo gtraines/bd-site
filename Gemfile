@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
 
 ruby '2.3.1'
-
+if RUBY_VERSION =~ /2.3/ # assuming you're running Ruby ~2.3
+  Encoding.default_external = Encoding::UTF_8
+  Encoding.default_internal = Encoding::UTF_8
+end
 gem 'accesslint-ci', '0.2.8'
 gem 'html-proofer'
 gem 'jekyll', '~> 3.3.0'
