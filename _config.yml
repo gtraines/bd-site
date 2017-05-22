@@ -54,7 +54,7 @@ footer:
   image: /assets/img/logos/tailicon.png
   email:
   twitter:
-  text: This site was built using <a href="https://federalist.18f.gov/" target="_blank">Federalist, from 18F</a>. # Change to a tag line for your agency
+  text: From checkout data to actionable insights # Change to a tag line for your agency
 
 # Build settings
 markdown: kramdown

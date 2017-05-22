@@ -51,19 +51,19 @@ redirect_from: /dashboard/
 
 <section class="usa-section background-medium">
   <section class="usa-grid">
-    <h2>How it works</h2>
-	<div class="usa-flex usa-flex-wrap">
-		{% assign features_list = site | find_collection: 'how-it-works' | weighted_sort: 'project_weight', 'title' %}
-		{% for feature in features_list %}
-			{% include card.html
-				image_src=feature.image
-				image_alt=feature.image_accessibility
-				image_icon=feature.image_icon
-				tagline=feature.title
-				description=feature.excerpt
-				link=feature.permalink
-			%}
-		{% endfor %}
-	</div>
+    <h2 class="section-heading">How it works</h2>
+    <div class="usa-flex usa-flex-wrap">
+      {% include card-project.html
+      project = "prepare-your-data"
+      %}
+
+      {% include card-project.html
+      project = "upload-your-data"
+      %}
+
+      {% include card-project.html
+      project = "receive-your-insights"
+      %}
+    </div>
   </section>
 </section>
