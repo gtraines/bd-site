@@ -1,10 +1,10 @@
 ---
 layout: default-intro
 agency: 
-title: 2. Upload your data
-subtitle: Submit checkout data via upload or integration
+title: 2. Submit
+subtitle: 2. Submit 
 permalink: /how-it-works/upload-your-data
-excerpt: We developed an approval tool that makes it easier for P-Card holders to manage purchases and approvals.
+excerpt: Upload your data through the web app or transmit via API
 image:
 image_accessibility:
 image_icon: cloud-upload.svg
@@ -18,5 +18,4 @@ resources:
 quotes:
 project_weight: 2
 ---
-
-Excerpt test stuff.
+Upload your data through the web app or transmit via API integration

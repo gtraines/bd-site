@@ -1,10 +1,10 @@
 ---
 layout: default-intro
 agency: 
-title: 3. Receive your insights
-subtitle: Download your report or recommendation 
+title: 3. Retrieve
+subtitle: 3. Retrieve
 permalink: /how-it-works/receive-your-insights
-excerpt:
+excerpt: Retrieve your insights
 image:
 image_accessibility:
 image_icon: idea.svg
@@ -16,5 +16,6 @@ project_weight: 1
 quote:
 quote_source:
 ---
+Download your report or recommendation 
 
 ### Stacked paper to searchable data

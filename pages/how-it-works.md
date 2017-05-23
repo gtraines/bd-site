@@ -1,33 +1,47 @@
 ---
-title: Basket Devil
+title: 
 permalink: /how-it-works/
-layout: default-intro
+layout: primary
 lead: How it works
-content_wide: true
-content_focus: false
 banner_cta: true
-gridless: true
+include_subnav: true
+subnav_items:
+  - text: 1. Prepare
+    permalink: /how-it-works/#1-prepare
+  - text: 2. Submit
+    permalink: /how-it-works/#2-submit
+  - text: 3. Retrieve
+    permalink: /how-it-works/#3-retrieve
+    
 ---
+Find your insights in three simple steps:
 
-<div class="usa-grid">
-  <section class="usa-section">
-    <div class="usa-section-bottom">
-      <h3>We’ve worked with more than 50 offices and agencies on more than 200 engagements.</h3>
-      <p>All our projects support agencies in transforming how they deliver digital services and technology products. Here are a few of the projects we’ve worked on.</p>
-    </div>
-    <div class="usa-flex usa-flex-wrap">
-      {% assign features_list = site | find_collection: 'how-it-works' | weighted_sort: 'project_weight', 'title' %}
-      {% for feature in features_list %}
-        {% include card.html
-         image_src=feature.image
-         image_alt=feature.image_accessibility
-         image_icon=feature.image_icon
-         tagline=feature.title
-         description=feature.excerpt
-         link=feature.permalink
-        %}
-      {% endfor %}
-    </div>
-  </section>
-</div>
+----
 
+## 1. Prepare
+Gather and prepare your checkout data for submission.
+
+Generate a file containing only the product identifiers from each transaction
+
+### Select which identifier you will use to consistently identify each product 
+Examples: 
+  - UPC
+  - SKU
+
+### Export the identifiers from each transaction
+Generate a comma-separated value file containing the identifiers (only the identifiers!) for each checkout transaction
+
+- Each transaction is represented as a line of comma-separated values
+
+----
+
+## 2. Submit
+
+
+
+-----
+
+## 3. Retrieve
+
+
+-----

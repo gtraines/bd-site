@@ -8,7 +8,7 @@ redirect_from: /hire/
 gridless: true
 ---
 <div class="usa-grid-full usa-grid-reversed">
-<div class="usa-grid usa-section usa-width-two-thirds">
+<div class="usa-grid usa-section">
 {% markdown %}
 
 ### Questions and feedback are always welcome!
