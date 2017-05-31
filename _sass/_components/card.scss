@@ -14,7 +14,8 @@ $card-image-height: 200px;
     svg ellipse,
     svg polygon,
     svg polyline {
-      stroke: $color-medium-hover;
+      stroke: $color-bright-hover;
+      fill: $color-bright-hover;
     }
   }
 
@@ -87,7 +88,7 @@ $card-image-height: 200px;
 }
 
 .card-image-bg {
-  background-color: $color-gray-lightest;
+  background-color: $color-bright;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -108,7 +109,8 @@ $card-image-height: 200px;
     ellipse,
     polygon,
     polyline {
-      stroke: $color-medium;
+      stroke: $color-light;
+      fill: $color-light;
     }
   }
 }
