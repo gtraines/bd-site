@@ -2,7 +2,7 @@
 layout: default-intro
 title: 1. Prepare
 subtitle: 1. Prepare 
-permalink: /how-it-works/prepare-your-data
+permalink: /how-it-works/#1-prepare
 excerpt: Format and anonymize your checkout data
 image:
 image_accessibility: 

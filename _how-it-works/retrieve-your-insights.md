@@ -3,7 +3,7 @@ layout: default-intro
 agency: 
 title: 3. Retrieve
 subtitle: 3. Retrieve
-permalink: /how-it-works/receive-your-insights
+permalink: /how-it-works/#3-retrieve
 excerpt: Retrieve your insights
 image:
 image_accessibility:
@@ -17,5 +17,3 @@ quote:
 quote_source:
 ---
 Download your report or recommendation 
-
-### Stacked paper to searchable data

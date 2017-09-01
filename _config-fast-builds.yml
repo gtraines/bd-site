@@ -25,7 +25,7 @@ exclude:
 - docker_entrypoint.rb
 - Dockerfile
 - examples/
-- favicon.ico
+#- favicon.ico
 - feed*
 - Gemfile*
 - humans.txt

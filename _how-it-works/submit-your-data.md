@@ -3,7 +3,7 @@ layout: default-intro
 agency: 
 title: 2. Submit
 subtitle: 2. Submit 
-permalink: /how-it-works/upload-your-data
+permalink: /how-it-works/#2-submit
 excerpt: Upload your data through the web app or transmit via API
 image:
 image_accessibility:

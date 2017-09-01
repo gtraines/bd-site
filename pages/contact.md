@@ -3,6 +3,7 @@ title: Contact
 permalink: /contact/
 layout: default-intro
 content_wide: false
+image_figcaption: Contact Us 
 image: /assets/img/page-feature/join.jpg
 redirect_from: /hire/
 gridless: true
@@ -12,6 +13,12 @@ gridless: true
 {% markdown %}
 
 ### Questions and feedback are always welcome!
+
+
+
+
+
+
 
 For more involved requests, we’ll set up a time to talk more, answer your questions, and determine next steps for your organization.
 

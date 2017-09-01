@@ -4,24 +4,22 @@ description: "Data science services supporting small retailers including free sh
 baseurl: "" # the subpath of your site, e.g. /blog
 permalink: pretty
 url: "https://www.basketdevil.com" # the base hostname & protocol for your sites
-#federalist_url: "https://federalist.18f.gov"
 localhost: "localhost:4000"
 env: "production"
 logo: /assets/img/logos/tailicon.png
-github_repo: https://github.com/gtraines/bd-site
+github_repo: "https://github.com/gtraines/bd-site"
 
 
 analytics:
   google:
-    code: ''
+    code: 'UA-99930019-1'
 
 collections:
   about:
     output: true
-    permalink: /:path/
+    permalink: /about/:name/
   how-it-works:
     output: true
-    permalink: /how-it-works/:path/
   contact:
     output: false
     permalink: /contact/:path/
@@ -52,9 +50,9 @@ frontmatter_tests:
 
 footer:
   image: /assets/img/logos/tailicon.png
-  email:
+  email: "admin@basketdevil.com"
   twitter:
-  text: From checkout data to actionable insights # Change to a tag line for your agency
+  text: "From checkout data to actionable insights" # Change to a tag line for your agency
 
 # Build settings
 markdown: kramdown
@@ -78,7 +76,7 @@ exclude:
 - docker_entrypoint.rb
 - Dockerfile
 - examples/
-- favicon.ico
+#- favicon.ico
 - Gemfile*
 - ISSUE_TEMPLATE.md
 - killport

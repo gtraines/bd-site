@@ -1,8 +1,8 @@
 ---
-title: 
+title: How it works
 permalink: /how-it-works/
 layout: primary
-lead: How it works
+lead: 
 banner_cta: true
 include_subnav: true
 subnav_items:
