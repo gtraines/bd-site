@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5782815d-b7e5-4fab-b4a0-8b416ce39294" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/18f.gsa.gov-master.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -269,7 +266,7 @@
       <workItem from="1496112554473" duration="613000" />
       <workItem from="1496155321983" duration="367000" />
       <workItem from="1496193545293" duration="6900000" />
-      <workItem from="1504224669395" duration="9678000" />
+      <workItem from="1504224669395" duration="9727000" />
     </task>
     <task id="LOCAL-00001" summary="Deleted some stuff?">
       <created>1494697817447</created>
@@ -299,11 +296,18 @@
       <option name="project" value="LOCAL" />
       <updated>1504236557102</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="More cleanup">
+      <created>1504236713206</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1504236713206</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107325000" />
+    <option name="totallyTimeSpent" value="107374000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1535" height="904" extended-state="6" />
