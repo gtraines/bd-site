@@ -1,0 +1,185 @@
+---
+title: Sign up
+permalink: /sign-up/
+layout: default-intro
+content_wide: true
+lead: Register and start using Basket Devil now
+---
+{% include angular-source.html %}
+<div ng-app="app">
+<div ng-controller="RegisterController as vm">
+    <section class="usa-section">
+        <div class="usa-grid">
+            <h2>Registration</h2>
+            <form method="post" action="https://www.basketdevil.com/register" enctype="multipart/form-data">
+                <fieldset> 
+                    <div class="usa-grid-full">
+                        <h3>Your information</h3>
+                    </div>
+                    <div ng-bind="vm.someValue"></div>
+                    <div class="usa-grid-full">
+                        <div class="usa-width-five-twelfths">
+                            <div class="usa-input-grid">
+                                <label for="email-address" class="usa-input-required">Email address</label> 
+                                <input id="email-address" name="email-address" type="email" required aria-required="true"> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="usa-grid-full">
+                        <div class="usa-width-five-twelfths">
+                            <div class="usa-input-grid">
+                                <label for="first-name" class="usa-input-required">First name</label> 
+                                <input id="first-name" name="first-name" type="text" required aria-required="true"> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="usa-grid-full">
+                        <div class="usa-width-five-twelfths">
+                            <div class="usa-input-grid">
+                                <label for="last-name" class="usa-input-required">Last name</label> 
+                                <input id="last-name" name="last-name" type="text" required aria-required="true"> 
+                            </div>				
+                        </div> 
+                        <div class="usa-width-one-sixth">
+                            <div class="usa-input-grid">
+                                <label for="name-suffix">Suffix</label> 
+                                <input id="name-suffix" name="name-suffix" type="text"> 
+                            </div>				
+                        </div>
+                    </div>
+                    <div class="usa-grid-full">
+                        <div class="usa-width-five-twelfths">
+                            <div class="usa-input-grid">
+                                <label for="position" class="usa-input-required">Position</label>
+                                <input id="position" name="position" type="text" required aria-required="true">
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Your company's information</h3>
+                    <div class="usa-grid-full">
+                        <div class="usa-width-five-twelfths">
+                            <label for="company-name" class="usa-input-required">Company name</label>
+                            <input id="company-name" name="company-name" type="text" required aria-required="true">
+                        </div>
+                    </div>
+                    <div class="usa-grid-full">
+                        <div class="usa-width-one-third">
+                            <div class="usa-input-grid">
+                                <label for="company-type" class="usa-input-required">Type of company</label>
+                                <select id="company-type" name="company-type" required aria-required="true">
+                                  <option value></option>
+                                  <option value="retail_store">Retail store, single location</option>
+                                  <option value="retail_chain">Retail chain, multiple locations</option>
+                                  <option value="franchise_location">Franchise, single location</option>
+                                  <option value="online">Online retailer</option>
+                                  <option value="other">Other</option>
+                                </select>	
+                            </div>						
+                        </div>
+                    </div>
+                    <div class="usa-grid-full">
+                        <div class="usa-width-one-third">
+                            <div class="usa-input-grid">
+                                <label for="company-location-identifier">Location name or number (if applicable)</label>
+                                <input id="company-location-identifier" name="company-location-identifier" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="usa-grid-full">
+                        <div class="usa-width-five-twelfths">
+                            <div class="usa-input-grid">
+                                <label for="company-address-1">Street address 1</label>
+                                <input id="company-address-1" name="company-address-1" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="usa-grid-full">
+                        <div class="usa-width-five-twelfths">
+                            <div class="usa-input-grid">
+                                <label for="company-address-2">Street address 2 <span class="usa-additional_text">(Optional)</span></label>
+                                <input id="company-address-2" name="company-address-2" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="usa-grid-full">
+                        <div class="usa-width-five-twelfths">
+                            <div class="usa-input-grid">
+                                <label for="city" class="usa-input-required">City</label>
+                                <input id="city" name="city" type="text" required aria-required="true">
+                            </div>
+                        </div>
+                        <div class="usa-width-five-twelfths">
+                            <div class="usa-input-grid usa-input-grid-medium">
+                                <label for="state">State</label>
+                                <select id="state" name="state" required aria-required="true">
+                                  <option value></option>
+                                  <option value="AL">Alabama</option>
+                                  <option value="AK">Alaska</option>
+                                  <option value="AZ">Arizona</option>
+                                  <option value="AR">Arkansas</option>
+                                  <option value="CA">California</option>
+                                  <option value="CO">Colorado</option>
+                                  <option value="CT">Connecticut</option>
+                                  <option value="DE">Delaware</option>
+                                  <option value="DC">District of Columbia</option>
+                                  <option value="FL">Florida</option>
+                                  <option value="GA">Georgia</option>
+                                  <option value="HI">Hawaii</option>
+                                  <option value="ID">Idaho</option>
+                                  <option value="IL">Illinois</option>
+                                  <option value="IN">Indiana</option>
+                                  <option value="IA">Iowa</option>
+                                  <option value="KS">Kansas</option>
+                                  <option value="KY">Kentucky</option>
+                                  <option value="LA">Louisiana</option>
+                                  <option value="ME">Maine</option>
+                                  <option value="MD">Maryland</option>
+                                  <option value="MA">Massachusetts</option>
+                                  <option value="MI">Michigan</option>
+                                  <option value="MN">Minnesota</option>
+                                  <option value="MS">Mississippi</option>
+                                  <option value="MO">Missouri</option>
+                                  <option value="MT">Montana</option>
+                                  <option value="NE">Nebraska</option>
+                                  <option value="NV">Nevada</option>
+                                  <option value="NH">New Hampshire</option>
+                                  <option value="NJ">New Jersey</option>
+                                  <option value="NM">New Mexico</option>
+                                  <option value="NY">New York</option>
+                                  <option value="NC">North Carolina</option>
+                                  <option value="ND">North Dakota</option>
+                                  <option value="OH">Ohio</option>
+                                  <option value="OK">Oklahoma</option>
+                                  <option value="OR">Oregon</option>
+                                  <option value="PA">Pennsylvania</option>
+                                  <option value="RI">Rhode Island</option>
+                                  <option value="SC">South Carolina</option>
+                                  <option value="SD">South Dakota</option>
+                                  <option value="TN">Tennessee</option>
+                                  <option value="TX">Texas</option>
+                                  <option value="UT">Utah</option>
+                                  <option value="VT">Vermont</option>
+                                  <option value="VA">Virginia</option>
+                                  <option value="WA">Washington</option>
+                                  <option value="WV">West Virginia</option>
+                                  <option value="WI">Wisconsin</option>
+                                  <option value="WY">Wyoming</option>
+                                </select>
+                              </div>
+                            </div>
+                        </div>
+                    <div class="usa-grid-full">
+                        <div class="usa-width-one-whole">
+                                <label for="zip" class="usa-input-required">ZIP</label>
+                                <!-- The example below includes the `data-politespace` attribute. This initializes Poltiespace to work with the zip code input. -->
+                                <input class="usa-input-medium" id="zip" name="zip" type="text" required aria-required="true" pattern="[\d]{5}(-[\d]{4})?" data-grouplength="5,4" data-delimiter="-" data-politespace>	
+                        </div>
+                    </div>
+                    <input type="submit" value="Submit">      
+                </fieldset>
+            </form>
+        </div>
+  </section>
+</div>
+</div>
+

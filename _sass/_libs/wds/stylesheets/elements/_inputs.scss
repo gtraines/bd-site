@@ -37,7 +37,7 @@ select {
   border: $input-border-width solid $color-gray;
   border-radius: 0;
   box-sizing: border-box;
-  color: $color-base; // standardize on firefox
+  color: $color-black; // standardize on firefox
   display: block;
   font-size: $base-font-size;
   height: $input-height;

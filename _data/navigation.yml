@@ -10,7 +10,7 @@ navbar:
 - text: Sign up
   permalink: /sign-up/
 - text: Login
-  permalink: /login/
+  permalink: https://app.basketdevil.com/
 
 drawer:
 - text: Home
@@ -24,7 +24,7 @@ drawer:
 - text: Sign up
   permalink: /sign-up/
 - text: Login
-  permalink: /login/
+  permalink: https://app.basketdevil.com/
 
 footer:
 - text: Home
@@ -38,4 +38,4 @@ footer:
 - text: Sign up
   permalink: /sign-up/
 - text: Login
-  permalink: /login/
+  permalink: https://app.basketdevil.com/

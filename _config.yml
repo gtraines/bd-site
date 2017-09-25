@@ -1,6 +1,6 @@
 # Site settings
 title: "Basket Devil: Shopping basket analysis for retailers"
-description: "Data science services supporting small retailers including free shopping basket analysis"
+description: "From checkout data to actionable insights"
 baseurl: "" # the subpath of your site, e.g. /blog
 permalink: pretty
 url: "https://www.basketdevil.com" # the base hostname & protocol for your sites
@@ -19,10 +19,13 @@ collections:
     output: true
     permalink: /about/:name/
   how-it-works:
-    output: true
+    output: false
   contact:
     output: false
     permalink: /contact/:path/
+  sign-up:
+    output: true
+    permalink: /sign-up/:path/
 
 defaults:
  -
@@ -44,6 +47,13 @@ defaults:
     layout: default-intro
     include_subnav: true
     subnav_anchor: /about/
+ -
+  scope:
+    path: "_sign-up"
+  values:
+    layout: default-intro
+    #include_subnav: true
+    #subnav_anchor: /sign-up/
 
 frontmatter_tests:
   path: "tests/schema"
