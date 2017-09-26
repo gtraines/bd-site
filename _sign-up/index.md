@@ -11,17 +11,16 @@ lead: Register and start using Basket Devil now
     <section class="usa-section">
         <div class="usa-grid">
             <h2>Registration</h2>
-            <form method="post" action="https://www.basketdevil.com/register" enctype="multipart/form-data">
+            <form name="registrationForm" ng-submit="vm.trySubmit(registrationForm.$valid)" enctype="multipart/form-data">
                 <fieldset> 
                     <div class="usa-grid-full">
                         <h3>Your information</h3>
                     </div>
-                    <div ng-bind="vm.someValue"></div>
                     <div class="usa-grid-full">
                         <div class="usa-width-five-twelfths">
                             <div class="usa-input-grid">
                                 <label for="email-address" class="usa-input-required">Email address</label> 
-                                <input id="email-address" name="email-address" type="email" required aria-required="true"> 
+                                <input id="email-address" name="emailAddress" ng-model="vm.formData.user.emailAddress" type="email" required aria-required="true"> 
                             </div>
                         </div>
                     </div>
@@ -29,7 +28,7 @@ lead: Register and start using Basket Devil now
                         <div class="usa-width-five-twelfths">
                             <div class="usa-input-grid">
                                 <label for="first-name" class="usa-input-required">First name</label> 
-                                <input id="first-name" name="first-name" type="text" required aria-required="true"> 
+                                <input id="first-name" name="firstName" ng-model="vm.formData.user.firstName" type="text" required aria-required="true"> 
                             </div>
                         </div>
                     </div>
@@ -37,13 +36,13 @@ lead: Register and start using Basket Devil now
                         <div class="usa-width-five-twelfths">
                             <div class="usa-input-grid">
                                 <label for="last-name" class="usa-input-required">Last name</label> 
-                                <input id="last-name" name="last-name" type="text" required aria-required="true"> 
+                                <input id="last-name" name="lastName" ng-model="vm.formData.user.lastName" type="text" required aria-required="true"> 
                             </div>				
                         </div> 
                         <div class="usa-width-one-sixth">
                             <div class="usa-input-grid">
                                 <label for="name-suffix">Suffix</label> 
-                                <input id="name-suffix" name="name-suffix" type="text"> 
+                               <input id="name-suffix" name="nameSuffix" ng-model="vm.formData.user.nameSuffix" type="text"> 
                             </div>				
                         </div>
                     </div>
@@ -51,7 +50,7 @@ lead: Register and start using Basket Devil now
                         <div class="usa-width-five-twelfths">
                             <div class="usa-input-grid">
                                 <label for="position" class="usa-input-required">Position</label>
-                                <input id="position" name="position" type="text" required aria-required="true">
+                                <input id="position" name="position" ng-model="vm.formData.user.position" type="text" required aria-required="true">
                             </div>
                         </div>
                     </div>
@@ -59,14 +58,14 @@ lead: Register and start using Basket Devil now
                     <div class="usa-grid-full">
                         <div class="usa-width-five-twelfths">
                             <label for="company-name" class="usa-input-required">Company name</label>
-                            <input id="company-name" name="company-name" type="text" required aria-required="true">
+                            <input id="company-name" name="companyName" ng-model="vm.formData.organization.companyName" type="text" required aria-required="true">
                         </div>
                     </div>
                     <div class="usa-grid-full">
                         <div class="usa-width-one-third">
                             <div class="usa-input-grid">
                                 <label for="company-type" class="usa-input-required">Type of company</label>
-                                <select id="company-type" name="company-type" required aria-required="true">
+                                <select id="company-type" ng-model="vm.formData.organization.companyType" name="companyType" required aria-required="true">
                                   <option value></option>
                                   <option value="retail_store">Retail store, single location</option>
                                   <option value="retail_chain">Retail chain, multiple locations</option>
@@ -81,7 +80,7 @@ lead: Register and start using Basket Devil now
                         <div class="usa-width-one-third">
                             <div class="usa-input-grid">
                                 <label for="company-location-identifier">Location name or number (if applicable)</label>
-                                <input id="company-location-identifier" name="company-location-identifier" type="text">
+                                <input id="company-location-identifier" name="companyLocationIdentifier" ng-model="vm.formData.organization.companyLocationIdentifier" type="text">
                             </div>
                         </div>
                     </div>
@@ -89,7 +88,7 @@ lead: Register and start using Basket Devil now
                         <div class="usa-width-five-twelfths">
                             <div class="usa-input-grid">
                                 <label for="company-address-1">Street address 1</label>
-                                <input id="company-address-1" name="company-address-1" type="text">
+                                <input id="company-address-1" name="companyAddress1" ng-model="vm.formData.organization.companyAddress1" type="text">
                             </div>
                         </div>
                     </div>
@@ -97,7 +96,7 @@ lead: Register and start using Basket Devil now
                         <div class="usa-width-five-twelfths">
                             <div class="usa-input-grid">
                                 <label for="company-address-2">Street address 2 <span class="usa-additional_text">(Optional)</span></label>
-                                <input id="company-address-2" name="company-address-2" type="text">
+                                <input id="company-address-2" name="companyAddress2" ng-model="vm.formData.organization.companyAddress2" type="text">
                             </div>
                         </div>
                     </div>
@@ -105,13 +104,13 @@ lead: Register and start using Basket Devil now
                         <div class="usa-width-five-twelfths">
                             <div class="usa-input-grid">
                                 <label for="city" class="usa-input-required">City</label>
-                                <input id="city" name="city" type="text" required aria-required="true">
+                                <input id="city" name="city" type="text" ng-model="vm.formData.organization.city" required aria-required="true">
                             </div>
                         </div>
                         <div class="usa-width-five-twelfths">
                             <div class="usa-input-grid usa-input-grid-medium">
                                 <label for="state">State</label>
-                                <select id="state" name="state" required aria-required="true">
+                                <select id="state" name="state" ng-model="vm.formData.organization.state" required aria-required="true">
                                   <option value></option>
                                   <option value="AL">Alabama</option>
                                   <option value="AK">Alaska</option>
@@ -170,12 +169,11 @@ lead: Register and start using Basket Devil now
                         </div>
                     <div class="usa-grid-full">
                         <div class="usa-width-one-whole">
-                                <label for="zip" class="usa-input-required">ZIP</label>
-                                <!-- The example below includes the `data-politespace` attribute. This initializes Poltiespace to work with the zip code input. -->
-                                <input class="usa-input-medium" id="zip" name="zip" type="text" required aria-required="true" pattern="[\d]{5}(-[\d]{4})?" data-grouplength="5,4" data-delimiter="-" data-politespace>	
+                              <label for="postalCode" class="usa-input-required">Postal Code</label>
+                                        <input class="usa-input-medium" id="postalCode" name="postalCode" ng-model="vm.formData.organization.postalCode" type="text" required aria-required="true" pattern="[\d]{5}(-[\d]{4})?" data-grouplength="5,4" data-delimiter="-" data-politespace>	
                         </div>
                     </div>
-                    <input type="submit" value="Submit">      
+                    <input type="submit" ng-disabled="registrationForm.$pristine" value="Submit">      
                 </fieldset>
             </form>
         </div>
